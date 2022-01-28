@@ -1,8 +1,13 @@
+import React from 'react'
+import Header from './components/Header/Header'
+import MealsSummary from './components/Meals/MealsSummary'
+
 function App() {
   return (
-    <div>
-      <h2>Let's get started!</h2>
-    </div>
+    <React.Fragment>
+      <Header />
+      <MealsSummary />
+    </React.Fragment>
   );
 }
 
