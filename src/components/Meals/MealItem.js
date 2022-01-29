@@ -5,9 +5,11 @@ import MealItemForm from './MealItemForm'
 const MealItem = (props) => {
   return (
     <div className={classes.meal}>
-      <h3>{props.name}</h3>
-      <span className={classes.description}>{props.description}</span>
-      <span className={classes.price}>{props.price}</span>
+      <div>
+        <h3>{props.name}</h3>
+        <p className={classes.description}>{props.description}</p>
+        <span className={classes.price}>{props.price}</span>
+      </div>
       <MealItemForm />
     </div>
   )
