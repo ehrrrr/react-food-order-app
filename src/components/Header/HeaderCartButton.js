@@ -2,7 +2,7 @@ import classes from './HeaderCartButton.module.css'
 import React from 'react'
 import CartIcon from '../UI/CartIcon'
 
-const HeaderCartButton = (props) => {
+const HeaderCartbutton = (props) => {
   return (
     <button className={classes.button}>
       <CartIcon className={classes.icon} />
@@ -12,4 +12,4 @@ const HeaderCartButton = (props) => {
   )
 }
 
-export default HeaderCartButton
+export default HeaderCartbutton

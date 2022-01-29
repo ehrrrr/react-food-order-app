@@ -1,6 +1,5 @@
 import classes from './Cart.module.css'
 import React from 'react'
-import Button from '../UI/Button/Button'
 import CartItem from './CartItem'
 
 const Cart = (props) => {
@@ -14,8 +13,8 @@ const Cart = (props) => {
         <span>$ 22.33</span>
       </div>
       <div className={classes.actions}>
-        <Button>Close</Button>
-        <Button className={classes['button--alt']}>Order</Button>
+        <button>Close</button>
+        <button className={classes['button--alt']}>Order</button>
       </div>
     </div>
   )
