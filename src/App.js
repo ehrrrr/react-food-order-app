@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useState, Fragment } from 'react'
 import Header from './components/Header/Header'
-import MealsSummary from './components/Meals/MealsSummary'
-import AvailableMeals from './components/Meals/AvailableMeals'
+import Meals from './components/Meals/Meals'
 
 function App() {
+  const [order, setOrder] = useState([])
+
   return (
-    <React.Fragment>
+    <Fragment>
       <Header />
-      <MealsSummary />
-      <AvailableMeals />
-    </React.Fragment>
+      <main>
+        <Meals />
+      </main>
+    </Fragment>
   );
 }
 

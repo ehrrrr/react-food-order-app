@@ -5,13 +5,8 @@ const Input = (props) => {
 
   return (
     <div className={`${ classes.input } ${ props.className }`} >
-      <label htmlFor={props.id}>{props.label}</label>
-      <input
-        id={props.id}
-        value={props.value}
-        type={props.type}
-        onChange={props.onChange}
-      />
+      <label htmlFor={props.input.id}>{props.label}</label>
+      <input {...props.input} />
     </div>
   )
 }

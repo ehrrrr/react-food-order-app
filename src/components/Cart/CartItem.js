@@ -1,5 +1,6 @@
 import classes from './CartItem.module.css'
 import React from 'react'
+// import Input from '../UI/Input/Input'
 
 const CartItem = (props) => {
 
@@ -8,7 +9,7 @@ const CartItem = (props) => {
       <h2>{props.title}</h2>
       <div className={classes.summary}>
         <span className={classes.price}>{props.price}</span>
-        <span className={classes.amount}>{props.amount}</span>
+        <input className={classes.amount} value={props.amount} />
       </div>
       <div className={classes.actions}>
         <button>+</button>
